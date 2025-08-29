@@ -31,7 +31,7 @@ export const viteFinal: StorybookConfig["viteFinal"] = async (
           presets: ["nativewind/babel"],
           plugins: [
             "@babel/plugin-proposal-export-namespace-from",
-            "react-native-worklets/plugin",
+            "react-native-reanimated/plugin",
           ],
         },
       }),
