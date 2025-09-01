@@ -1,14 +1,9 @@
-import { defineConfig } from "vite";
-
-// yeah i don't know
 import path from "node:path";
+import { defineConfig } from "vite";
 import { rnw } from "vite-plugin-rnw";
 
 // https://vite.dev/config/
 export default defineConfig({
-  optimizeDeps: {
-    include: ["@gorhom/bottom-sheet"],
-  },
   plugins: [
     rnw({
       jsxRuntime: "automatic",

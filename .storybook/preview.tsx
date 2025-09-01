@@ -1,4 +1,3 @@
-import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 import type { Preview } from "@storybook/html-vite";
 import { Easing } from "react-native-reanimated";
 
@@ -16,11 +15,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story, { args, globals }) => {
-      return (
-        <BottomSheetModalProvider>
-          <Story args={{ ...args }} />
-        </BottomSheetModalProvider>
-      );
+      return <Story args={{ ...args }} />;
     },
   ],
 };
