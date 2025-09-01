@@ -20,9 +20,6 @@ export const viteFinal: StorybookConfig["viteFinal"] = async (
   );
 
   return mergeConfig(reactConfigWithoutPlugins, {
-    optimizeDeps: {
-      include: ["@gorhom/bottom-sheet"],
-    },
     plugins: [
       rnw({
         jsxRuntime: "automatic",
