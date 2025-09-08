@@ -1,17 +1,20 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import { Canvas } from "@shopify/react-native-skia";
+// import { Circle, Group } from "@shopify/react-native-skia";
+// import { Canvas } from "@shopify/react-native-skia";
+
+import { View } from "react-native";
 
 export default function SkiaExample() {
   const width = 256;
   const height = 256;
   const r = width * 0.33;
-  return (
-    <Canvas style={{ width, height }}>
-      <Group blendMode="multiply">
-        <Circle cx={r} cy={r} r={r} color="cyan" />
-        <Circle cx={width - r} cy={r} r={r} color="magenta" />
-        <Circle cx={width / 2} cy={width - r} r={r} color="yellow" />
-      </Group>
-    </Canvas>
-  );
+  // return (
+  // <Canvas style={{ width, height }}>
+  //   <Group blendMode="multiply">
+  //     <Circle cx={r} cy={r} r={r} color="cyan" />
+  //     <Circle cx={width - r} cy={r} r={r} color="magenta" />
+  //     <Circle cx={width / 2} cy={width - r} r={r} color="yellow" />
+  //   </Group>
+  // </Canvas>
+  // );
+  return <View style={{ width, height, backgroundColor: "lightgray" }} />;
 }

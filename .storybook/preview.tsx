@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/html-vite";
+import type { Preview } from "@storybook/react-vite";
 import { Easing } from "react-native-reanimated";
 
 console.log("Easing", Easing.out(Easing.exp));
@@ -14,7 +14,7 @@ const preview: Preview = {
     },
   },
   decorators: [
-    (Story, { args, globals }) => {
+    (Story, { args }) => {
       return <Story args={{ ...args }} />;
     },
   ],
