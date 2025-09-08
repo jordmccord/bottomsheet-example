@@ -7,9 +7,7 @@ export default defineConfig({
   plugins: [
     rnw({
       jsxRuntime: "automatic",
-      jsxImportSource: "nativewind",
       babel: {
-        presets: ["nativewind/babel"],
         plugins: [
           "@babel/plugin-proposal-export-namespace-from",
           "react-native-worklets/plugin",
