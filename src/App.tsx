@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Text, View, Pressable } from "react-native";
+import { Pressable, Text, View } from "react-native";
 import Animated, {
   useSharedValue,
   withSequence,
@@ -12,7 +12,6 @@ import { ExpoImageExample } from "./components/expo-image";
 import { Ball } from "./components/gesture";
 import { NWButton } from "./components/nativewind";
 import Toast2 from "./components/toast";
-import { SkiaLoader } from "./components/skialoader";
 import "./global.css";
 
 export default function App() {
@@ -102,7 +101,7 @@ export default function App() {
             alignItems: "center",
           }}
         >
-          <SkiaLoader />
+          {/* <SkiaLoader /> */}
         </View>
 
         <DatePicker />
